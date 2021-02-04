@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product.css" />
     <title>Product</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,11 +19,17 @@
   <body>
     <header>
       <nav>
-        <a href="index.html" id="logo"></a>
+        <a href="index.html" id="logo"
+          ><img src="images/logo.png" alt="garms logo"
+        /></a>
         <a href="category.html">Collections</a>
         <a href="#">My profile</a>
-        <a href="#" id="icons"></a>
-        <a href="#" id="icons"></a>
+        <a href="#" class="icons"
+          ><img src="images/search.svg" alt="search icon"
+        /></a>
+        <a href="#" class="icons"
+          ><img src="images/cart.svg" alt="cart icon"
+        /></a>
       </nav>
     </header>
     <main>
@@ -39,12 +46,13 @@
         <li>Drop the label T-shirt</li>
       </ol>
       <section>
-        <div>
-          <img src="images/product1.jpg" alt="product photo of t-shirt" />
+        <div id="product">
+          <img src="images/product2.jpg" alt="product photo of t-shirt" />
         </div>
-        <div>
+        <div id="text">
           <div class="info">
             <h1>Drop the label T-shirt</h1>
+            <h2>Product information</h2>
             <dl>
               <dt>Model name</dt>
               <dd>Drop the label Round Neck Cotton</dd>
