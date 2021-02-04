@@ -132,10 +132,11 @@ table {
 h1 {
   font-family: lato;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 30px;
 }
 
-h2 {
+h2,
+label {
   font-family: lato;
   font-weight: bold;
   font-size: 20px;
@@ -152,18 +153,18 @@ dl {
   font-size: 15px;
 }
 
-img {
-  min-width: 100;
+#product img {
+  max-width: 80%;
+}
+
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
 }
 
 main {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 20px;
-}
-
-#logo img {
-  max-width: 7%;
+  margin-top: 60px;
 }
 
 .icons img {
@@ -174,33 +175,135 @@ main {
 a,
 li {
   font-family: lato;
-  font-size: 15px;
+  font-size: 13px;
   text-decoration: none;
   color: black;
+}
+
+ol.breadcrumbs li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 section {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 #also {
   display: flex;
   flex-direction: column;
+  margin-right: 0;
+  padding-right: 0;
+  margin-left: 40px;
 }
 
 #also img {
-  max-width: 80%;
+  max-width: 75.5%;
+  margin-top: 15px;
 }
 
 #text {
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .breadcrumbs {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
+}
+
+nav a {
+  padding-right: 30px;
+  padding-top: 8px;
+  font-size: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  position: relative;
+  left: 65.5%;
+}
+#logo img {
+  max-width: 100px;
+  min-width: 100px;
+}
+
+#logo {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.info {
+  margin-bottom: 20%;
+}
+
+.info h1,
+.purchaseBox h1 {
+  margin-bottom: 40px;
+}
+
+.info h2,
+.info dd,
+.purchaseBox p {
+  margin-bottom: 20px;
+}
+
+.info dt {
+  margin-bottom: 10px;
+}
+
+#soldOut {
+  text-decoration: line-through;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+select,
+button {
+  margin-right: 40px;
+  font-family: lato;
+  font-size: 10px;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  height: 2.5rem;
+  background-color: lightgrey;
+  border: none;
+}
+
+button {
+  min-width: 30%;
+}
+
+.purchaseBox #discount,
+.purchaseBox #soldOut {
+  font-family: lato;
+  font-size: 15px;
+}
+
+.vertical {
+  position: relative;
+  border: 1px solid;
+  left: -25px;
+}
+
+img {
+  border-radius: 10px;
 }
