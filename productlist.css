@@ -138,7 +138,9 @@ section {
 .price {
   font-family: lato;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .discount p {
@@ -152,8 +154,8 @@ section {
   position: relative;
   width: 80px;
   text-align: center;
-  top: -55px;
-  left: 60.5%;
+  top: -85px;
+  left: 63%;
 }
 
 .sold p {
@@ -162,16 +164,17 @@ section {
   font-weight: bold;
   color: black;
   background-color: lightgray;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   padding: 12px;
   position: relative;
   width: 120px;
   text-align: center;
-  top: -55px;
-  left: 51%;
+  top: -603px;
+  left: 53.1%;
 }
 
-p {
+h1 {
   font-family: lato;
   font-size: 15px;
   margin-left: 10px;
@@ -242,6 +245,10 @@ nav {
 #logo {
   margin-top: 0;
   padding-top: 0;
+}
+
+section article.soldOut img {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 700) {
