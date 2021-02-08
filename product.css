@@ -255,13 +255,14 @@ select,
 button {
   margin-right: 40px;
   font-family: lato;
-  font-size: 10px;
+  font-size: 8px;
+  color: white;
   text-align: center;
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 10px;
   height: 2.5rem;
-  background-color: lightgrey;
+  background-color: black;
   border: none;
 }
 
