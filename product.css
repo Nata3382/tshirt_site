@@ -133,6 +133,7 @@ h1 {
   font-family: lato;
   font-weight: bold;
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 h2,
@@ -155,6 +156,7 @@ dl {
 
 #product img {
   max-width: 80%;
+  margin-bottom: 30px;
 }
 
 body {
@@ -190,29 +192,13 @@ a:hover {
   text-decoration: underline;
 }
 
-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#also {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0;
-  padding-right: 0;
-  margin-left: 40px;
+#also h2 {
+  margin-bottom: 10px;
 }
 
 #also img {
   max-width: 75.5%;
-  margin-top: 15px;
-}
-
-#text {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+  margin-top: 10px;
 }
 
 .breadcrumbs {
@@ -234,7 +220,7 @@ nav {
 
 .icons {
   position: relative;
-  left: 65.5%;
+  left: 63.9%;
 }
 #logo img {
   max-width: 100px;
@@ -244,15 +230,6 @@ nav {
 #logo {
   margin-top: 0;
   padding-top: 0;
-}
-
-.info {
-  margin-bottom: 20%;
-}
-
-.info h1,
-.purchaseBox h1 {
-  margin-bottom: 40px;
 }
 
 .info h2,
@@ -292,18 +269,64 @@ button {
   min-width: 30%;
 }
 
+.purchaseBox {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .purchaseBox #discount,
 .purchaseBox #soldOut {
   font-family: lato;
   font-size: 15px;
 }
 
-.vertical {
-  position: relative;
-  border: 1px solid;
-  left: -25px;
-}
-
 img {
   border-radius: 10px;
+}
+
+body {
+  display: grid;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  header,
+  footer {
+    grid-column: 1/-1;
+  }
+
+  #product {
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+    width: 40%;
+  }
+
+  #product_info {
+    margin-left: 40px;
+  }
+
+  .info {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  #also {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    align-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+  }
+
+  #also img {
+    min-width: 60%;
+    margin-bottom: 10px;
+  }
 }
