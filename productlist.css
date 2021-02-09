@@ -247,7 +247,7 @@ nav {
   padding-top: 0;
 }
 
-section article.soldOut img {
+.soldOut img {
   opacity: 0.5;
 }
 

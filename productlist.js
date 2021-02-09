@@ -18,6 +18,8 @@ function showProduct(product) {
   copy.querySelector("h1").textContent = product.productdisplayname;
   copy.querySelector("p.price").textContent = "€ " + product.price;
 
+  copy.querySelector("a").href = `product.html?id=${product.id}`;
+
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldOut");
   }
