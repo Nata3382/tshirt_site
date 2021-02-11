@@ -12,6 +12,7 @@ function showProduct(product) {
   document.querySelector(".breadcrumbs .season").textContent = product.season;
   document.querySelector(".breadcrumbs .productname").textContent =
     product.productdisplayname;
+
   document.querySelector(
     "img.productimage"
   ).src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;

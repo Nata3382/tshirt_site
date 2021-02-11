@@ -50,19 +50,27 @@
       </div>
 
       <section>
-        <template id="smallProductTemplate"><article class="smallProduct onSale">
-          <a href="product.html"
-            ><img class="productimage" src="images/plist1.jpg" alt="Sunglasses"
+        <template id="smallProductTemplate">
+          <article class="smallProduct">
+            <div class="img_wrapper">
+              <a href="product.html"><img class="productimage" src="images/plist1.jpg" alt="Sunglasses"
           /></a>
-          <h1>Sunglasses</h1>
-          <p class="price">€ 20</p>
           <div class="sold">
             <p>SOLD OUT</p>
           </div>
+        </div>
+
+          <h1>Sunglasses</h1>
+
+          <div class="price_wrapper">
+          <p class="price">€ 20</p>
+        
           <div class="discount">
             <p>25%</p>
           </div>
-        </article></template>
+        </div>
+        </article>
+      </template>
         <!-- <article class="smallProduct">
           <a href="product.html"
             ><img src="images/plist2.jpg" alt="t-shirt"

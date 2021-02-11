@@ -130,17 +130,20 @@ table {
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 50px;
+}
+
+article {
+  padding-top: 30px;
 }
 
 .price {
   font-family: lato;
   font-weight: bold;
   font-size: 40px;
-  margin-top: 20px;
-  margin-left: 10px;
+  padding-top: 10px;
 }
 
 .discount p {
@@ -151,11 +154,8 @@ section {
   background-color: black;
   border-radius: 10px;
   padding: 12px;
-  position: relative;
   width: 80px;
   text-align: center;
-  top: -85px;
-  left: 63%;
 }
 
 .sold p {
@@ -167,24 +167,59 @@ section {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 12px;
-  position: relative;
   width: 120px;
   text-align: center;
-  top: -603px;
-  left: 53.1%;
+}
+
+.smallProduct {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.img_wrapper {
+  display: grid;
+}
+
+.img_wrapper > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.price_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sold {
+  visibility: hidden;
+  justify-self: end;
+  padding-top: 50px;
+  z-index: 10;
+}
+
+.soldOut .sold {
+  visibility: visible;
+}
+
+.discount {
+  visibility: hidden;
+  justify-self: end;
+}
+
+.onSale .discount {
+  visibility: visible;
 }
 
 h1 {
   font-family: lato;
   font-size: 15px;
-  margin-left: 10px;
-  padding-bottom: 8px;
+  padding-top: 10px;
 }
 
 section article img {
-  max-width: 85%;
-  margin: 30px 10px 10px 10px;
   border-radius: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
