@@ -1,0 +1,297 @@
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* START */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 50px;
+}
+
+article {
+  padding-top: 30px;
+}
+
+.price {
+  font-family: lato;
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 10px;
+}
+
+.discount p {
+  font-family: lato;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 12px;
+  width: 80px;
+  text-align: center;
+}
+
+.sold p {
+  font-family: lato;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background-color: lightgray;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 12px;
+  width: 120px;
+  text-align: center;
+}
+
+.smallProduct {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.img_wrapper {
+  display: grid;
+}
+
+.img_wrapper > * {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.price_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sold {
+  visibility: hidden;
+  justify-self: end;
+  padding-top: 50px;
+  z-index: 10;
+}
+
+.soldOut .sold {
+  visibility: visible;
+}
+
+.discount {
+  visibility: hidden;
+  justify-self: end;
+}
+
+.onSale .discount {
+  visibility: visible;
+}
+
+h1 {
+  font-family: lato;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+section article img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+
+.icons img {
+  width: 25px;
+  height: 25px;
+}
+
+a,
+li {
+  font-family: lato;
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+}
+
+ol.breadcrumbs li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+nav a {
+  padding-right: 30px;
+  padding-top: 8px;
+  font-size: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  position: relative;
+  left: 65%;
+}
+#logo img {
+  max-width: 100px;
+  min-width: 100px;
+}
+
+#logo {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.soldOut img {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 700) {
+  .discount p {
+    margin-right: 10px;
+  }
+
+  .sold p {
+    margin-right: 10px;
+  }
+}

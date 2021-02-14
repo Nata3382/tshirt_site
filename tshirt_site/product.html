@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product.css" />
+    <title>Product</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" id="logo"
+          ><img src="images/logo.png" alt="garms logo"
+        /></a>
+        <a href="category.html">Collections</a>
+        <a href="#">My profile</a>
+        <a href="#" class="icons"
+          ><img src="images/search.svg" alt="search icon"
+        /></a>
+        <a href="#" class="icons"
+          ><img src="images/cart.svg" alt="cart icon"
+        /></a>
+      </nav>
+    </header>
+    <main>
+      <ol class="breadcrumbs">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="category.html">Collections</a>
+        </li>
+        <li class="season">
+          <a href="productlist.html">Spring</a>
+        </li>
+        <li class="productname">Drop the label T-shirt</li>
+      </ol>
+
+      <div id="product">
+        <img
+          class="productimage"
+          src="images/product2.jpg"
+          alt="product photo of t-shirt"
+        />
+
+        <div id="product_info">
+          <div class="info">
+            <h1>Drop the label T-shirt</h1>
+            <h2>Product information</h2>
+            <dl>
+              <dt>Model name</dt>
+              <dd class="title">Drop the label Round Neck Cotton</dd>
+              <dt>Color</dt>
+              <dd>White</dd>
+              <dt>Inventory number</dt>
+              <dd>1163</dd>
+            </dl>
+          </div>
+
+          <div class="purchaseBox">
+            <h1><span>€ 40</span></h1>
+            <p id="discount">Discount on item: 0%</p>
+            <p id="soldOut">Sold out</p>
+            <form>
+              <label
+                >Size
+                <select name="size">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+              </label>
+              <button>Add to basket</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside>
+      <div id="also">
+        <h2>You might also like</h2>
+        <img src="images/also1.jpg" alt="Sunglasses" />
+        <img src="images/also2.jpg" alt="Boots" />
+      </div>
+    </aside>
+    <script src="product.js"></script>
+  </body>
+</html>
